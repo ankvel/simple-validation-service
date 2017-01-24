@@ -14,7 +14,7 @@ public class ValidationServiceImpl implements ValidationService {
             return true;
         }
 
-        Class<? extends ConstraintValidator<?>> validatorClass = constraint.validatedBy();
+        Class<? extends ConstraintValidator> validatorClass = constraint.validatedBy();
         try {
             ConstraintValidator<T> constraintValidator = (ConstraintValidator<T>)validatorClass.newInstance();
             return constraintValidator.isValid(item);

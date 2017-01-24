@@ -3,7 +3,7 @@ package com.ankvel.edu.validation;
 /**
  * @author Aleksey Kovalenko
  */
-/*
+
 public class MySomeConstraintValidator<T extends MySome> extends BaseSomeConstraintValidator<T> {
     @Override
     public boolean isValid(T item) {
@@ -11,7 +11,8 @@ public class MySomeConstraintValidator<T extends MySome> extends BaseSomeConstra
         return superResult && (item.getOwner() != null);
     }
 }
-*/
+
+/*
 
 public class MySomeConstraintValidator implements ConstraintValidator<MySome> {
     @Override
@@ -22,4 +23,5 @@ public class MySomeConstraintValidator implements ConstraintValidator<MySome> {
         return superResult && (item.getOwner() != null);
     }
 }
+*/
 
